@@ -16,6 +16,38 @@
         "powershell": "powershell -NoProfile -ExecutionPolicy Bypass -File \"./hooks/babysitter-proxied-stop.ps1\"",
         "loop_limit": null
       }
+    ],
+    "userPromptSubmit": [
+      {
+        "type": "command",
+        "bash": "bash \"./hooks/babysitter-proxied-user-prompt-submit.sh\"",
+        "powershell": "powershell -NoProfile -ExecutionPolicy Bypass -File \"./hooks/babysitter-proxied-user-prompt-submit.ps1\"",
+        "timeoutSec": 30
+      }
+    ],
+    "preToolUse": [
+      {
+        "type": "command",
+        "bash": "bash \"./hooks/babysitter-proxied-pre-tool-use.sh\"",
+        "powershell": "powershell -NoProfile -ExecutionPolicy Bypass -File \"./hooks/babysitter-proxied-pre-tool-use.ps1\"",
+        "timeoutSec": 30
+      }
+    ],
+    "postToolUse": [
+      {
+        "type": "command",
+        "bash": "bash \"./hooks/babysitter-proxied-post-tool-use.sh\"",
+        "powershell": "powershell -NoProfile -ExecutionPolicy Bypass -File \"./hooks/babysitter-proxied-post-tool-use.ps1\"",
+        "timeoutSec": 30
+      }
+    ],
+    "sessionEnd": [
+      {
+        "type": "command",
+        "bash": "bash \"./hooks/babysitter-proxied-session-end.sh\"",
+        "powershell": "powershell -NoProfile -ExecutionPolicy Bypass -File \"./hooks/babysitter-proxied-session-end.ps1\"",
+        "timeoutSec": 30
+      }
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "babysitter",
-  "version": "5.0.1-staging.dfac8e4a",
+  "version": "6.0.0",
   "description": "Orchestrate complex, multi-step workflows with event-sourced state management, hook-based extensibility, and human-in-the-loop approval",
   "author": {
     "name": "a5c.ai",
@@ -22,5 +22,5 @@
   "skills": "skills/",
   "commands": "commands/",
   "hooks": "hooks/hooks-cursor.json",
-  "homepage": "https://github.com/a5c-ai/babysitter/tree/main/plugins/babysitter-cursor#readme"
+  "homepage": "https://github.com/a5c-ai/babysitter/tree/main/plugins/babysitter-unified/per-harness/cursor#readme"
 }

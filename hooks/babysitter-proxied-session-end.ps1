@@ -1,5 +1,5 @@
 # PowerShell hook wrapper — sets env vars and delegates to bash
-$env:HOOK_TYPE = 'stop'
+$env:HOOK_TYPE = 'session-end'
 $env:ADAPTER_NAME = 'cursor'
 $env:PLUGIN_ROOT = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 $env:CLAUDE_PLUGIN_ROOT = $env:PLUGIN_ROOT
